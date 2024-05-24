@@ -1,0 +1,50 @@
+/* index.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffcccc; /* Пастельный розовый */
+}
+
+.container {
+    text-align: center;
+}
+
+.header {
+    color: #333; /* Цвет текста заголовка */
+    font-size: 2em; /* Размер шрифта заголовка */
+    margin-bottom: 30px; /* Отступ снизу для заголовка */
+}
+
+.activity-container {
+    display: inline-block;
+    position: relative;
+}
+
+.activity {
+    font-style: italic;
+    color: #666; /* Цвет текста активности */
+    font-size: 1.5em; /* Размер шрифта активности */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(-50%, 0);
+    }
+    50% {
+        transform: translate(-50%, -10px);
+    }
+    100% {
+        transform: translate(-50%, 0);
+    }
+}
