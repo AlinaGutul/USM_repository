@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учет личных финансов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Учет личных финансов</h1>
+
+    <form id="transaction-form">
+        <label for="amount">Сумма:</label>
+        <input type="number" id="amount" name="amount" required>
+        <label for="category">Категория:</label>
+        <select id="category" name="category" required>
+            <option value="food">Продукты</option>
+            <option value="transport">Транспорт</option>
+            <option value="entertainment">Развлечения</option>
+            <!-- Добавьте другие категории по желанию -->
+        </select>
+        <label for="description">Описание:</label>
+        <input type="text" id="description" name="description" required>
+        <button type="submit">Добавить транзакцию</button>
+    </form>
+
+    <table id="transaction-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Дата и время</th>
+                <th>Категория</th>
+                <th>Описание</th>
+                <th>Действие</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Здесь будут добавляться строки таблицы -->
+        </tbody>
+    </table>
+
+    <div id="total"></div>
+
+    <div id="transaction-details"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
